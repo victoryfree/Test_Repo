@@ -7,7 +7,7 @@ function writeNumbers(res) {
 	var counter = 0;
 
 	// 숫자를 증가해가면서 클라이언트에게 쓴다
-	for (var i = 0; i<100; i++) {
+	for (var i = 2600; i<2700; i++) {
 		counter++;
 		res.write(counter.toString() + '\n');
 		}
