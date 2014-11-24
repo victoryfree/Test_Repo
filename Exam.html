@@ -1,20 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>HHTML TEXT Basic Page</title>
+	<title>JavaScript loan Calculator</title>
+	<style>
+	/* 프로그램의 출력을 꾸며주는 CSS 스타일시트 */
+	.result { font-weight: bold; } /* class가 result인 클래스 */
+	#payment { text-decoration: underline; } /* id가 'payment'인 엘리먼트 */
+	</style>
 </head>
 <body>
-	<h1>Lorem ipsum</h1>
-	<h2>dolor sit amet</h2>
-	<hr />
-	<p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-	<br />
-	<p>In porttitor lorem at justo feugiat aliquet.</p>
-	<br />
-	<p>Nunc id massa at magna semper hendrerit</p>
-	<br />
-	<p>Vivamus rhoncus eros vel ante suscipit non facilisis risus rutrum.</p>
-	<a href="http://hanb.co.kr">Hanbit</a><br />
-	<a href="https://github.com">Github</a><br />
+<!--
+다음은 사용자가 데이터를 입력하면 자바스크립트로 게산 결과를 보여 주는 HTML 폼이다. 폼 엘리먼트들은 일정한 모양을 갖추기 위해 표 안에 들어 있다. 폼 자체의 이름은 "loandata"이고 폼 내의 필드 이름은 "interest"나 "years"등이다. 이 필드 이름들은 폼 이후에 따라 나오는 자바스크립트 코드에서 사용된다. 몇몇 폼 엘리먼트가 onchange나 onclick 이벤트 처리기를 정의하고 있는 것을 보라. 이 이벤트 처리기들은 사용자가 데이터를 입력하거나 버튼을 클릭했을 때 실행될 자바스크립트 코드를 담고 있다.
+-->
+<form name="loandata">
+	<table>
+		<tr><td><b>Enter Loan Information:</b></td></tr>
+		<tr>
+			<td>1) Amount of the loan (any currency):</td>
+			<td><input type="text" name="principal" onchange="calculate();"></td>
+		</tr>
+		<tr>
+			<td>2) </td>
+			<td></td>
+		</tr>
+	</table>
+</form>
 </body>
 </html>

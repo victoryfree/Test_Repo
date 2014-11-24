@@ -13,8 +13,32 @@ table {
   height: 500px;
 }
 
-.a1 {
+button.btn {
+  width: 100px;
+  
+}
+
+.layer-popup {
+  display:none; position:absolute; left:50%; top:175px; z-index:10; padding:30px 30px 35px; margin-left:-235px; background-color:#fff; border:1px solid #000;
+}
+
+p.a1 {
   text-align: center;
+  font-size: 13pt;
+}
+
+div.login-text {
+  font-size: 12pt;
+}
+
+button.login-button {
+  border: 0;
+  margin: 0 auto;
+  background-color: ;
+}
+
+.form-text {
+  margin-bottom: 5px;
 }
 
 .form-signin {
@@ -31,7 +55,8 @@ table {
 }
 .form-signin .form-control {
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
+  color: #000;
   height: auto;
   padding: 10px;
   -webkit-box-sizing: border-box;
@@ -43,11 +68,11 @@ table {
 }
 .form-signin input[type="text"] {
   margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 1;
+  border-bottom-right-radius: 1;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-left-radius: 1;
+  border-top-right-radius: 1;
 }

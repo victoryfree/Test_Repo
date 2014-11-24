@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>로그인 (1 of 7)</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="view.min.css">
+	<link rel="stylesheet" type="text/css" href="elegant-fonts.css">
+	<!-- <script async="" src="//www.google-analytics.com/analytics.js"></script> -->
+	<script src="/static/package/view-resource.min.js?1416454921210"></script>
+	<script>
+		screenWidth = 1200; projectId = "QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo"; sequenceId = "h0HI7";
+	</script>
+	<style>
+		body {margin:0;padding:0;background:;}
+		#webView {overflow:hidden;position:relative;width:1200px;height:600px;margin:0 auto;outline:-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+		#webView[data-show-memo='true'] {overflow:visible}
+		.ovenWebview_Nav {position:fixed;bottom:15px;left:15px;width:120px;height:40px;color:#fff;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+		.ovenWebview_Nav a {text-decoration:none;color:#fff}
+		.ovenWebview_Nav > a {margin-right:5px;opacity:0.7;-webkit-transition:all 0.2s;transition:all 0.2s;;font-size:36px;}
+		.ovenWebview_Nav > a:not(.disabled):hover {opacity:1}
+		.ovenWebview_Nav > .disabled {opacity:0.2;cursor:default}
+		#toggleMoreMenu {cursor:move}
+		.ovenWebview_MoreMenu {position:absolute;width:170px;margin-left:-10px;box-shadow:5px 5px 10px rgba(0,0,0,0.15);border-radius:4px;}
+		.ovenWebview_MoreMenu .arrow {position:absolute;bottom:-10px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #1abc9c;}
+		.ovenWebview_MoreMenu .arrow.up {bottom:auto;top:-10px;border-top:none;border-bottom:10px solid #1abc9c;}
+		.ovenWebview_Nav .ovenWebview_MoreMenu a {display:block;height:40px;line-height:40px;padding:0 14px 0 28px;background:#1abc9c;color:#fff;}
+		.ovenWebview_MoreMenu a:first-of-type {border-radius:4px 4px 0 0}
+		.ovenWebview_MoreMenu a:last-of-type {border-radius:0 0 4px 4px}
+		.ovenWebview_MoreMenu a:not(.disabled):hover {background:#16a085;}
+		.ovenWebview_MoreMenu .sub a.current {font-weight:bold;background:#16a085;}
+		.ovenWebview_MoreMenu a.current:after {position:absolute;left:7px;font-family:"ElegantIcons";content:"N"}
+		.ovenWebview_MoreMenu a.has_sub.on {background:#16a085;}
+		.ovenWebview_MoreMenu a.has_sub:after {position:absolute;right:10px;font-family:"ElegantIcons";content:"E"}
+		.ovenWebview_MoreMenu .sub {display:none;overflow:auto;position:absolute;left:97%;height:165px;margin-top:-70px;width:130px;box-shadow:2px 2px 12px rgba(0,0,0,0.35);border-radius:4px;background:#1abc9c}
+		.ovenWebview_MoreMenu .sub.alt {left:auto;right:97%;}
+		.ovenWebview_MoreMenu .sub > a {overflow:hidden;font-size:12px;height:30px;line-height:30px;padding:0 10px 0 25px;text-overflow:ellipsis;white-space: nowrap}
+		.ovenWebview_MoreMenu a.disabled {color:rgba(255,255,255,0.3);cursor:default;}
+
+		.ovenQRnURL {position:absolute;z-index:1000;top:50%;left:50%;width:320px;height:380px;margin:-240px 0 0 -170px;padding:10px;background-color:rgba(0,0,0,0.6);border-radius:20px;}
+		.ovenQRnURL > img {background-color:#fff;margin:20px;}
+		.ovenQRnURL > strong {display:block;font-size:24px;font-family:Monospace;text-align:center;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,1);}
+		.ovenWebview_Nav a {color:#1abc9c}
+	</style>
+
+	<script type="text/javascript" async="" src="https://m1.daumcdn.net/tiara/js/td.min.js">
+	</script>
+</head>
+
+<body data-locale="ko" style="">
+	<div id="webView" data-canvas="true" data-show-memo="true" data-show-link="true" title="페이지에 링크가 연결된 객체가 있을 경우 화면을 터치/클릭하면 표시됩니다." class="">
+		<div data-obj-type="group" data-obj-id="0OuyS" class="" style="position: absolute; left: 443px; top: 318px; width: 289px; height: 20px;">
+			<div data-obj-id="hBd4w" data-obj-type="element" style="position: absolute; top: 0px; left: 0px; width: 20px; height: 20px;" class="">
+				<label data-form-control="checkbox" data-min-width="20" data-min-height="20">
+					<input type="checkbox" checked="checked">
+					<span data-form-decorator="true"></span>
+				</label>
+			</div>
+			
+			<div data-obj-id="0v60N" data-obj-type="element" data-text-editable="true" style="position: absolute; top: 0px; left: 32px; width: 257px; height: 20px;" class="">
+				<div data-text-content="true" style="font-size:16px;" class="">자동 로그인</div>
+			</div>
+		</div>
+		
+		<div data-obj-id="NKOAk" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 114px; left: 453px; width: 300px; height: 54px;">
+			<div data-text-content="true" style="font-weight: bold; font-size: 36px; text-align: center;" class="">Worksby.net</div>
+		</div>
+
+		<div data-obj-id="uVYbT" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 376px; left: 553px; width: 100px; height: 40px;">
+			<div data-text-content="true" style="font-size: 16px; color: rgb(255, 255, 255); text-align: center; line-height: 2.5em; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(52, 152, 219);" class="">로그인</div></div>
+			<div data-obj-id="TClJD" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 427px; left: 453px; width: 300px; height: 20px;">
+				<div data-text-content="true" style="font-size: 16px; text-align: center;" class="">회원가입하기</div>
+			</div>
+				
+				<div data-obj-type="group" data-obj-id="EXDkm" class="" style="position: absolute; left: 443px; top: 219px; width: 319.952392578125px; height: 89px;">
+					<div data-obj-id="qA44M" data-obj-type="element" data-text-editable="true" style="position: absolute; top: 49px; left: 60.952392578125px; width: 259.047619047619px; height: 40px;" class="">
+						<input type="password" data-min-width="60" data-min-height="30" data-text-content="true" value="0000" style="color: rgb(94, 94, 94); border-top-left-radius: 0px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 0px; border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgb(204, 204, 204);" class="">
+					</div>
+					<div data-obj-id="CnPOG" data-obj-type="element" data-text-editable="true" style="position: absolute; top: 49px; left: 0px; width: 60.952380952381px; height: 40px;" class="">
+						<div data-text-content="true" style="border-top-left-radius: 4px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 4px; border-width: 1px 0px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 1px 0px inset; background-color: rgb(237, 237, 237);"></div>
+					</div>
+					<div data-obj-id="DlNXV" data-obj-type="icon" style="position: absolute; top: 60px; left: 16.761901855469px; width: 27.4285714285714px; height: 18px;" class="">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" fill="rgb(166, 166, 166)" data-svg-content="true" preserveAspectRatio="none"><g><path d="M 31,0l-4,0 c-0.242,0-0.476,0.088-0.66,0.248L 12.536,12.35C 11.822,12.2, 10.718,12, 10,12c-5.514,0-10,4.486-10,10 s 4.486,10, 10,10s 10-4.486, 10-10c0-1.638-0.312-2.736-0.666-3.648l 3.404-1.156c 0.414-0.14, 0.688-0.534, 0.678-0.97l-0.084-3.796 l 3.82-0.266c 0.512-0.036, 0.914-0.454, 0.93-0.966l 0.142-4.558l 2.992-0.664C 31.674,5.876, 32,5.468, 32,5l0-4 C 32,0.448, 31.552,0, 31,0z M 7,22c 1.2,0, 2.236,0.706, 2.716,1.724C 9.898,24.112, 10,24.544, 10,25C 10,26.656, 8.656,28, 7,28 S 4,26.656, 4,25S 5.344,22, 7,22z"></path></g></svg>
+					</div>
+						<div data-obj-id="V9FjN" data-obj-type="element" data-text-editable="true" style="position: absolute; top: 0px; left: 60.952392578125px; width: 259.047619047619px; height: 40px;" class="">
+						<input type="text" data-min-width="60" data-min-height="30" data-text-content="true" value="Username" style="color: rgb(94, 94, 94); border-top-left-radius: 0px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 0px; border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgb(204, 204, 204);" class="">
+						</div>
+						
+						<div data-obj-id="oGRsc" data-obj-type="element" data-text-editable="true" style="position: absolute; top: 0px; left: 0px; width: 60.952380952381px; height: 40px;" class="">
+							<div data-text-content="true" style="border-top-left-radius: 4px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 4px; border-width: 1px 0px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 1px 0px inset; background-color: rgb(237, 237, 237);"></div>
+						</div>
+
+						<div data-obj-id="jekNH" data-obj-type="icon" style="position: absolute; top: 9px; left: 13.714294433594px; width: 35.047619047619px; height: 23px;" class="">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="33.762001037597656" viewBox="0 0 32 33.762001037597656" fill="rgb(166, 166, 166)" data-svg-content="true" preserveAspectRatio="none"><g><path d="M 22,6c0-3.212-2.788-6-6-6S 10,2.788, 10,6c0,3.212, 2.788,6, 6,6S 22,9.212, 22,6zM 16,14c-5.256,0-10,5.67-10,12.716s 20,7.046, 20,0S 21.256,14, 16,14z"></path></g></svg>
+						</div>
+					</div>
+</div>
+
+<div style="display:none;" class="ovenQRnURL"></div>
+<div style="" class="ovenWebview_Nav ui-draggable ui-draggable-handle">
+	<a href="javascript:;" class="disabled">
+		<span class="arrow_triangle-left_alt2"></span>
+	</a>
+	<a id="toggleMoreMenu" href="javascript:;">
+		<span class="icon_menu-circle_alt"></span>
+	</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/uR4of" class="move_next">
+		<span class="arrow_triangle-right_alt2"></span>
+	</a>
+	<div style="display: none; top: -178px; left: 10.5703125px;" class="ovenWebview_MoreMenu">
+		<span class="arrow" style="left: 65.9296875px;"></span>
+		<a href="javascript:;" class="has_sub">
+			<span class="icon_menu-square_alt">		
+			</span>&nbsp;페이지 목록</a>
+<!--
+<div style="display:none;" class="sub">
+	<a href="javascript:;" class="current">1. 로그인</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/uR4of">2. 유저등록</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/L5pw2">3. 유저승인 메일</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/x2LTI">4. 유저승인 페이지</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/3Ky50">5. 메인</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/yMx85">6. 업무등록창</a>
+	<a href="/view/QhWvJX61UJrmEJ6sooy1UUVoHaHvUARo/2LT7A">7. 업무보기</a></div>
+	<a href="javascript:;" class="current toggle_memo">
+		<span class="icon_quotations_alt"></span>&nbsp;메모 표시</a>
+	<a href="javascript:;" class="current toggle_link">
+		<span class="icon_cursor"></span>&nbsp;링크영역 표시</a>
+	<a href="javascript:;" class="showQR">
+		<span class="icon_mobile"></span>&nbsp;QR / 단축URL</a>
+</div>
+-->
+
+</div>
+</body>
+</html>
